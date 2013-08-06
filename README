@@ -1,0 +1,43 @@
+/------------------\
+| CODE DESCRIPTION |
+\------------------/
+
+This Python script implements a simple numerical procedure for solving
+Maxwell's electrostatic equations for the case of a spherical conductor with
+a conical aperture. The problem is discussed in the following paper:
+
+    Lamberti & Prato, 1991. Am. J. Phys., vol. 59, p. 68
+
+See that paper for a complete description of the problem.
+
+
+/-----------------------\
+| SOFTWARE REQUIREMENTS |
+\-----------------------/
+
+    - Python 3.x (http://www.python.org/)
+        - Python 3 has been out for something like 3 years now. There is no
+          reason to write new code in Python 2 syntax. Print is a function now,
+          sorry.
+
+    - matplotlib (http://matplotlib.org/)
+        - Standard Python plotting library.
+
+    - SciPy (http://www.scipy.org/)
+        - Scientific library for Python.
+
+
+/------------\
+| PARAMETERS |
+\------------/
+
+There are a few parameters which, at the moment, are hard-coded in the Python
+script itself. They are:
+
+    alpha: the subtending the surface of the spherical conductor, *excluding*
+           the aperture. Must be between 0 and pi.
+
+    a: the radius of the sphere. Must be > 0.
+
+    V: the (constant) potential held on the surface of the conductor. Can be
+       positive or negative.
